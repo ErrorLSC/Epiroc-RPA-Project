@@ -1,0 +1,4 @@
+set HTTP_PROXY=http://gateway.zscloud.net:443
+--proxy http://gateway.zscloud.net:443
+
+[Environment]::SetEnvironmentVariable("MY_VAR","C:\Users\JPEQZ\OneDrive - Epiroc\Python\Python interpreters", "User")
