@@ -12,7 +12,7 @@ def IIMcleaning(IIMdf,outputpath,fileoutput=True):
 
 def rategroup_update(filteredIIMdf,EPLALL,output,fileoutput=True):
     #filteredIIMdf = pd.read_excel(filteredIIM,dtype={"IPROD":str})
-    EPLalldf = pd.read_excel(EPLALL,usecols=['Item No','RG'],dtype={"IPROD":str})
+    EPLalldf = pd.read_excel(EPLALL,usecols=['Item No','RG','PGC','GAC'],dtype={"IPROD":str})
     filteredIIMdf_newRG = pd.merge(filteredIIMdf,EPLalldf,left_on='IPROD',right_on='Item No',how='left')
     filteredIIMdf_newRG['New_RG'] = filteredIIMdf_newRG["RG"].fillna('NN')
     filteredIIMdf_newRG.loc[filteredIIMdf_newRG['IVEND'].astype(str).str.len() == 5, 'New_RG'] = 'NN'
@@ -51,7 +51,7 @@ def PLC_filtering(PLCpath,filteredIIM_newRG_notNN,PLCname,outputpath):
     IIM_PLC_df.to_csv(final_outputpath,index=False)
 
 if __name__ == "__main__":
-    IIMSQLpath = r"C:\Users\JPEQZ\OneDrive - Epiroc\Python\STDcost_LP_change\itemmasterSQL.txt"
+    IIMSQLpath = r"C:\Users\JPEQZ\OneDrive - Epiroc\Python\STDcost_LP_change\itemmasterSQL.sql"
     RDD = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\DATA brush up\LISTPRICE&STD COST\RF\JPE_RF_Jul2024(RDD).xlsx"
     PSD = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\DATA brush up\LISTPRICE&STD COST\RF\ZXJPE_LF&RF_Jul2024(MRS).xlsx"
     HAT = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\DATA brush up\LISTPRICE&STD COST\RF\RF 07 2024 Japan JPE_JPY(HAT).xlsx"

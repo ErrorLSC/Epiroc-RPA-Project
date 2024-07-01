@@ -17,7 +17,7 @@ def calculate_margin(row):
         return None
 
 def EPL_merge(EPL,IIM_PLC,RF,SEK_rate,LCF):
-    IIMcols = ["IPROD","CXPPLC","IVEND",'IXRATG',"New_RG","ISCST","ILIST","STKOH01"]
+    IIMcols = ["IPROD","CXPPLC","IVEND",'IXRATG',"New_RG","ISCST","ILIST","STKOH01",'CXATLC','PGC']
     EPLcols = ["Item No","IRP"]
     RFcols = ["RG","RF"]
     IIMdf = pd.read_csv(IIM_PLC,usecols=IIMcols,dtype={"IPROD":str},index_col="IPROD")
