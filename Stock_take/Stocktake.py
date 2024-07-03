@@ -67,7 +67,7 @@ if __name__ == "__main__":
 
     BPCSdic = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\QRYs\STKOH"
     LCATdic = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\QRYs\LCAT_STOCK"
-    Resultdic = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\Stock take\202404"
+    Resultdic = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\Stock take\202407"
     ELALdic = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\QRYs\OUTBOUND\ELAL01"
 
     stkoh = newest_file_in_directory(BPCSdic)
