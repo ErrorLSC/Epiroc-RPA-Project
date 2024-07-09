@@ -64,7 +64,7 @@ if __name__ == "__main__":
     IIMSQL = read_sql_file(IIMSQLpath)
 
     IIMdf = BPCSquery(IIMSQL,"JPNPRDF")
-    filteredIIMdf = IIMcleaning(IIMdf,filteredIIMpath,fileoutput=False)
+    filteredIIMdf = IIMcleaning(IIMdf,filteredIIMpath,fileoutput=True)
     filteredIIMdf_newRG_notNN = rategroup_update(filteredIIMdf,EPLALL,filteredIIMdf_newRG_output,fileoutput=True)
 
     for PLC,PLCname in PLCinfo:
