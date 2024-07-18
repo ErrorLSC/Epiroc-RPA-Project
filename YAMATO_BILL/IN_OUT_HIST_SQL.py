@@ -34,7 +34,7 @@ def totalcount(pickdf,inbounddf):
     return ratio
 
 def HIST_bill(YAMATOBILL,totalratio):
-    billdf = pd.read_excel(YAMATOBILL,sheet_name='page1table2')
+    billdf = pd.read_excel(YAMATOBILL,sheet_name='pagetable2')
     billdf['本体金額'] = billdf['本体金額'].str.replace(' ','').str.replace(',','')
     billdf['本体金額'] = billdf['本体金額'].astype(float)
     billdf = billdf[billdf['項目'] != '宅急便運賃']
@@ -77,8 +77,8 @@ def FinalFee(fee_detail):
     FinalFee.to_excel('YAMATO_BILL/OUTPUT/Yamato/人件費.xlsx')
 
 if __name__ == "__main__":
-    YAMATOBILL =  r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\Bills\Yamato\202406\Yamatotable.xlsx"
-    YAMATODETAIL = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\Bills\Yamato\202406\【6月度】運賃明細データ.xlsx"
+    YAMATOBILL =  r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\Bills\Yamato\202407\Yamatotable.xlsx"
+    YAMATODETAIL = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\Bills\Yamato\202407\【7月度】運賃明細データ.xlsx"
     KITQUOTEMASTER = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\kit&assy\KITQUOTE.xlsx"
     start_date = dateperiod("int")[0]
     end_date = dateperiod("int")[1]

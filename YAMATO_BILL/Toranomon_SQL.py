@@ -87,8 +87,8 @@ def total(yamato,seinou,pickhist,samepack_column_list):
         worksheet.write('A4',datestr)
 
 if __name__ == "__main__":
-    seinoubill = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\Bills\Yamato\202406\seinou\0296496731_20240615_01358.csv"
-    detail = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\Bills\Yamato\202406\【6月度】運賃明細データ.xlsx"
+    seinoubill = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\Bills\Yamato\202407\seinou\0296496731_20240715_01337.csv"
+    detail = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\Bills\Yamato\202407\【7月度】運賃明細データ.xlsx"
 
     start_date = dateperiod("int")[0]
     end_date = dateperiod("int")[1]

@@ -27,8 +27,8 @@ def seinou(pickhist,seinoubill,seinoudetail):
 
 if __name__ == "__main__":
     #pickhist = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\QRYs\OUTBOUND\PICKHIST.xlsx"
-    seinoubill = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\Bills\Yamato\202406\seinou\0296496731_20240615_01358.csv"
-    seinoudetail = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\Bills\Yamato\202406\【6月度】運賃明細データ.xlsx"
+    seinoubill = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\Bills\Yamato\202407\seinou\0296496731_20240715_01337.csv"
+    seinoudetail = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\Bills\Yamato\202407\【7月度】運賃明細データ.xlsx"
 
     start_date = dateperiod("int")[0]
     end_date = dateperiod("int")[1]
