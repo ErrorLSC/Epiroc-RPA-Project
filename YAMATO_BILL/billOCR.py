@@ -50,6 +50,5 @@ def table_exporter(result_list):
 
 if __name__ == '__main__':
     pdffile = r"C:\Users\jpeqz\OneDrive - Epiroc\SCX\Bills\Yamato\202404\【4月度】御請求書.pdf"
-    endpoint = "https://faxformrecoginzer.cognitiveservices.azure.com/"
-    credential = "9ab7cca139354de19484d263e5b4e603"
+
     OCR(pdffile)
