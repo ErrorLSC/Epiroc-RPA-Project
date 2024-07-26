@@ -140,8 +140,7 @@ def table_exporter(result_list):
 if __name__ == '__main__':
 
     address_book = r"C:\Code\workingdics\OCR\customerlist.xlsx"    
-    endpoint = "https://faxformrecoginzer.cognitiveservices.azure.com/"
-    credential = "9ab7cca139354de19484d263e5b4e603"
+
     document = r""  
 
     page_list = splitPDF(document)
